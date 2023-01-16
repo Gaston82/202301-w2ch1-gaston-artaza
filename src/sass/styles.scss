@@ -4,9 +4,40 @@
 @use "./colors";
 
 main {
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
 }
 
 .card {
   background-color: colors.$main-color;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: variables.$size-primary;
+  width: 300px;
+  height: 200px;
+}
+
+.card__title {
+  color: #fff;
+}
+
+.card__content {
+  color: colors.$font-primary-color;
+}
+
+.card__button {
+  background-color: colors.$primary-color;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  padding: 8px 0;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
